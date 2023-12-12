@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "DownloadsOrganiser",
+  "description": "Automatically organizes downloaded files into designated folders based on file type.",
+  "version": "1.0",
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "permissions": [
+    "downloads",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "img/icon48.png",
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

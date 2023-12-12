@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads Organiser</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">DownloadOrganiser</h1>
+        <form id="addMappingForm">
+            <div class="form-group">
+                <label for="newExtension">File Extension (e.g., pdf):</label>
+                <input type="text" id="newExtension" placeholder="Enter file extension">
+            </div>
+            <div class="form-group">
+                <label for="newFolder">Folder Name (e.g., PDFs/):</label>
+                <input type="text" id="newFolder" placeholder="Enter folder name">
+            </div>
+            <button type="submit">Add Folder</button>
+        </form>
+
+   
+        <div id="successMessage" class="success-message"></div>
+        
+        <div id="errorMessage" class="error-message"></div>
+        <a href="./../options/options.html" target="_blank" class="link-to-options">Go to Settings Page</a>
+        <div id="messageBox"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
